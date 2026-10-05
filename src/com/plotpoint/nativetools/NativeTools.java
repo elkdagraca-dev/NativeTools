@@ -18,7 +18,7 @@ import com.google.appinventor.components.runtime.ComponentContainer;
         description = "Ferramentas nativas simples para Android.",
         category = ComponentCategory.EXTENSION,
         nonVisible = true,
-        iconName = "icon.png"
+        iconName = ""
 )
 @SimpleObject(external = true)
 public class NativeTools extends AndroidNonvisibleComponent {

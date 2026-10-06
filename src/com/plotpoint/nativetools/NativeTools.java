@@ -8,10 +8,14 @@ import android.os.Vibrator;
 import com.google.appinventor.components.annotations.DesignerComponent;
 import com.google.appinventor.components.annotations.SimpleFunction;
 import com.google.appinventor.components.annotations.SimpleObject;
+import com.google.appinventor.components.annotations.UsesPermissions;
 import com.google.appinventor.components.common.ComponentCategory;
 import com.google.appinventor.components.runtime.AndroidNonvisibleComponent;
 import com.google.appinventor.components.runtime.ComponentContainer;
 
+@UsesPermissions(
+        permissionNames = "android.permission.VIBRATE"
+)
 @DesignerComponent(
         version = 1,
         versionName = "1.0",
@@ -75,4 +79,4 @@ public class NativeTools extends AndroidNonvisibleComponent {
             vibrator.vibrate(milliseconds);
         }
     }
-  }
+            }
